@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Brand — luxury clothing with a little touch of elegance." />
+  <title>Brand — Luxury Clothing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__inner container">
+      <a href="#" class="header__logo">Brand</a>
+
+      <nav class="header__nav" aria-label="Main navigation">
+        <button class="header__menu-btn" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="header__links">
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#sales">Sales</a></li>
+          <li><a href="#new">New</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="header__icon-btn" aria-label="Language">En</button>
+        <button class="header__icon-btn" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+        </button>
+        <button class="header__icon-btn" aria-label="Account">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+          </svg>
+        </button>
+        <button class="header__icon-btn" aria-label="Cart">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="shop">
+      <div class="hero__image-wrap">
+        <!-- Replace src with your hero photo: images/hero.jpg -->
+        <img
+          src="images/hero.jpg"
+          alt="Model in luxury outfit"
+          class="hero__image"
+          onerror="this.classList.add('is-placeholder')"
+        />
+        <div class="hero__overlay">
+          <h1 class="hero__title">Little touch to make it luxury</h1>
+          <p class="hero__subtitle">Up to 50% off black friday</p>
+          <a href="#shop" class="btn btn--primary">Shop Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured + Best Sellers -->
+    <section class="featured" id="sales">
+      <div class="container featured__grid">
+
+        <!-- Left: Build your Vibe -->
+        <article class="featured__card">
+          <div class="featured__image-wrap">
+            <!-- Replace src with your photo: images/build-your-vibe.jpg -->
+            <img
+              src="images/build-your-vibe.jpg"
+              alt="Build your vibe collection"
+              class="featured__image"
+              onerror="this.classList.add('is-placeholder')"
+            />
+            <div class="featured__content">
+              <h2 class="featured__title">Build your Vibe</h2>
+              <a href="#shop" class="btn btn--primary">Shop Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Right: Best Sellers -->
+        <div class="bestsellers">
+          <h2 class="bestsellers__heading">Best Seller :</h2>
+          <div class="bestsellers__grid">
+
+            <article class="product-card product-card--compact">
+              <div class="product-card__image-wrap">
+                <img src="images/products/polo.jpg" alt="Polo" class="product-card__image" onerror="this.classList.add('is-placeholder')" />
+              </div>
+              <h3 class="product-card__name">Polo</h3>
+              <p class="product-card__price">$43.99</p>
+            </article>
+
+            <article class="product-card product-card--compact">
+              <div class="product-card__image-wrap">
+                <img src="images/products/knit-polo.jpg" alt="Knit Polo" class="product-card__image" onerror="this.classList.add('is-placeholder')" />
+              </div>
+              <h3 class="product-card__name">Knit Polo</h3>
+              <p class="product-card__price">$74.99</p>
+            </article>
+
+            <article class="product-card product-card--compact">
+              <div class="product-card__image-wrap">
+                <img src="images/products/trousers.jpg" alt="Trousers" class="product-card__image" onerror="this.classList.add('is-placeholder')" />
+              </div>
+              <h3 class="product-card__name">Trousers</h3>
+              <p class="product-card__price">$71.99</p>
+            </article>
+
+            <article class="product-card product-card--compact">
+              <div class="product-card__image-wrap">
+                <img src="images/products/textured-polo.jpg" alt="Textured Polo" class="product-card__image" onerror="this.classList.add('is-placeholder')" />
+              </div>
+              <h3 class="product-card__name">Textured Polo</h3>
+              <p class="product-card__price">$25.99</p>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Full Product Grid -->
+    <section class="catalog" id="new">
+      <div class="container">
+        <div class="catalog__grid">
+
+          <article class="product-card">
+            <div class="product-card__image-wrap">
+              <img src="images/products/polo.jpg" alt="Polo" class="product-card__image" onerror="this.classList.add('is-placeholder')" />
+            </div>
+            <h3 class="product-card__name">Polo</h3>
+            <p class="product-card__price">$43.99</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image-wrap">
+              <img src="images/products/knit-polo.jpg" alt="Knit Polo" class="product-card__image" onerror="this.classList.add('is-placeholder')" />
+            </div>
+            <h3 class="product-card__name">Knit Polo</h3>
+            <p class="product-card__price">$74.99</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image-wrap">
+              <img src="images/products/trousers.jpg" alt="Trousers" class="product-card__image" onerror="this.classList.add('is-placeholder')" />
+            </div>
+            <h3 class="product-card__name">Trousers</h3>
+            <p class="product-card__price">$71.99</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image-wrap">
+              <img src="images/products/textured-polo.jpg" alt="Textured Polo" class="product-card__image" onerror="this.classList.add('is-placeholder')" />
+            </div>
+            <h3 class="product-card__name">Textured Polo</h3>
+            <p class="product-card__price">$25.99</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image-wrap">
+              <img src="images/products/classic-polo.jpg" alt="Classic Polo" class="product-card__image" onerror="this.classList.add('is-placeholder')" />
+            </div>
+            <h3 class="product-card__name">Classic Polo</h3>
+            <p class="product-card__price">$67.99</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-card__image-wrap">
+              <img src="images/products/wide-pants.jpg" alt="Wide Pants" class="product-card__image" onerror="this.classList.add('is-placeholder')" />
+            </div>
+            <h3 class="product-card__name">Wide Pants</h3>
+            <p class="product-card__price">$51.99</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__brand">Brand</p>
+      <p class="footer__copy">&copy; 2026 Brand. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
