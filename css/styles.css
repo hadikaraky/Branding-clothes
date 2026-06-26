@@ -276,6 +276,7 @@ ul {
    ============================================ */
 .featured {
   padding-block: 12px;
+  padding-inline: 12px;
 }
 
 .featured__grid {
